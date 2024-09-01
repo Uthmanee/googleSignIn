@@ -3,10 +3,36 @@
     "name": "googleSignIn",
     "slug": "googleSignIn",
     "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ]
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#F27C28"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.uthmanee.googleSignIn"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "package": "com.uthmanee.googleSignIn"
+    },
+    "scheme": "googleSignIn",
+    "extra": {
+      "eas": {
+        "projectId": "7db72329-9df3-44c0-b065-fc32377eb714"
+      }
+    },
+    "plugins": ["@react-native-google-signin/google-signin"],
+    "updates": {
+      "url": "https://u.expo.dev/7db72329-9df3-44c0-b065-fc32377eb714"
+    }
   }
 }
