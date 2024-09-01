@@ -7,26 +7,6 @@ configureGoogleSignIn();
 
 export default function App() {
   const { googleSignOut, handleGoogleLogin, user } = useGoogleSignIn();
-  console.log(user);
-
-  console.log(
-    "A man, a plan, a canal: Panama"
-      .toLowerCase()
-      .split(" ")
-      .filter(
-        (char) => (char >= "a" && char <= "z") || (char >= "0" && char <= "9")
-      )
-  );
-  console.log(
-    "A man, a plan, a canal: Panama"
-      .toLowerCase()
-      .split(" ")
-      .filter(
-        (char) => (char >= "a" && char <= "z") || (char >= "0" && char <= "9")
-      )
-      .reverse()
-      .join("")
-  );
 
   return (
     <View style={styles.container}>
